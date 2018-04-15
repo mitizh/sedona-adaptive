@@ -7,59 +7,67 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header class="page-header">
-		<nav class="nav">
-			<ul class="nav__list">
-				<li class="nav__item"><a href="#" class="nav__link nav__link--no-border">главная</a></li>
-				<li class="nav__item"><a href="#" class="nav__link">фото и видео</a></li>
-				<li class="nav__item"><a class="nav__link nav__link--white"></a></li>
-				<li class="nav__item"><a href="#" class="nav__link">форма отзыва</a></li>
-				<li class="nav__item"><a href="#" class="nav__link">html academy</a></li>
-				<button class="close-menu">закрыть</button>
-				<button class="open-menu">открыть</button>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<section class="intro">
-			<img class="intro__slogan" src="img/text-sedona-index.svg" width="280" height="212" alt="welcome to the gorgeous sedona, 'because grand canyon sucks'">
-		</section>
-
-		<section class="reasons">
-			<div class="reasons__descr">
-				<h3 class="reasons__title">седона — небольшой 
-				городок в аризоне, заслуживающий большего!</h3>
-				<p class="reasons__content">рассмотрим 5 причин, по которым седона круче чем гранд каньон!</p>
+	<div class="page-wrapper">
+		<header class="page-header">
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="#" class="nav__link nav__link--no-border">главная</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">фото и видео</a></li>
+					<li class="nav__item">
+						<a class="nav__link nav__link--white">
+							<picture class="nav__logo">
+								<source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+         				<source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+								<img src="img/logo-sedona-mobile.svg" alt="logotype sedona">
+							</picture>
+						</a>
+					</li>
+					<li class="nav__item"><a href="#" class="nav__link">форма отзыва</a></li>
+					<li class="nav__item"><a href="#" class="nav__link">html academy</a></li>
+					<button class="nav__close-menu">закрыть</button>
+					<button class="nav__open-menu">открыть</button>
+				</ul>
+			</nav>
+			<div class="intro">
+				<img class="intro__slogan" src="img/text-sedona-index.svg" alt="welcome to the gorgeous sedona, 'because grand canyon sucks'">
 			</div>
-			div.
-			<div class="reasons__item">
-				<h3 class="reasons__title">настоящий городок</h3>
-				<p class="reasons__number">— №1 —</p>
-				<p class="reasons__content">седона не аттракцион для туристов, там течет своя жизнь</p>
-				<img src="" alt="" class="reasons__image">
-			</div>
-			<div class="reasons__item">
-				<h3 class="reasons__title">там есть мост дьявола</h3>
-				<p class="reasons__number">— №2 —</p>
-				<p class="reasons__content">да, по нему можно пройти! если вы осмелитесь, конечно</p>
-				<img src="" alt="" class="reasons__image">
-			</div>
-			<div class="reasons__item">
-				<h3 class="reasons__title">небольшая площадь</h3>
-				<p class="reasons__number">— №3 —</p>
-				<p class="reasons__content">все интересные места находятся очень близко</p>
-			</div>
-			<div class="reasons__item">
-				<h3 class="reasons__title">красивая дорога</h3>
-				<p class="reasons__number">— №4 —</p>
-				<p class="reasons__content">ехать в седону из лас-вегаса совсем не скучно!</p>
-			</div>
-			<div class="reasons__item">
-				<h3 class="reasons__title">мало туристов</h3>
-				<p class="reasons__number">— №5 —</p>
-				<p class="reasons__content">большинство едет в гранд каньон и толпится там</p>
-			</div>
-		</section>
-	</main>
+		</header>
+		<main>
+			<section class="reasons">
+				<div class="reasons__descr">
+					<h3 class="reasons__title reasons__title--big-margin">седона — небольшой  
+					городок в аризоне, заслуживающий большего!</h3>
+					<p class="reasons__content">рассмотрим 5 причин, по которым седона круче чем гранд каньон!</p>
+				</div>
+				<div class="reasons__item reasons__item--bg-blue reasons__item--text-white">
+					<h3 class="reasons__title reasons__item--text-white">настоящий городок</h3>
+					<p class="reasons__number">— №1 —</p>
+					<p class="reasons__content">седона не аттракцион для туристов, там течет своя жизнь</p>
+					<img src="img/main-city-mobile@1x.jpg" alt="photo city" class="reasons__image">
+				</div>
+				<div class="reasons__item reasons__item--bg-blue reasons__item--text-white">
+					<h3 class="reasons__title reasons__item--text-white">там есть мост дьявола</h3>
+					<p class="reasons__number">— №2 —</p>
+					<p class="reasons__content">да, по нему можно пройти! если вы осмелитесь, конечно</p>
+					<img src="" alt="" class="reasons__image">
+				</div>
+				<div class="reasons__item">
+					<h3 class="reasons__title">небольшая площадь</h3>
+					<p class="reasons__number">— №3 —</p>
+					<p class="reasons__content">все интересные места находятся очень близко</p>
+				</div>
+				<div class="reasons__item">
+					<h3 class="reasons__title">красивая дорога</h3>
+					<p class="reasons__number">— №4 —</p>
+					<p class="reasons__content">ехать в седону из лас-вегаса совсем не скучно!</p>
+				</div>
+				<div class="reasons__item">
+					<h3 class="reasons__title">мало туристов</h3>
+					<p class="reasons__number">— №5 —</p>
+					<p class="reasons__content">большинство едет в гранд каньон и толпится там</p>
+				</div>
+			</section>
+		</main>
+	</div>
 </body>
 </html>
